@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/table.css" />
@@ -29,31 +31,44 @@
       
         <p>Build perfect Git commits with Commit Craft</p>
       </header>
-      
-      <div class="help-container">
-        <button class="help-btn">?</button>
+    
+      <div class="buttons-container">
+        <!-- Help Button -->
+        <div class="help-container">
+          <button class="help-btn">?</button>
+          
+          <div class="help-tooltip">
+              <h3>Help</h3>
 
-        <div class="help-tooltip">
-            <h3>Help</h3>
+              <ol>
+                <li>Enter the commit description in the field above.</li>
+                <li>Select the desired change type from the table.</li>
+                <li>Click on the corresponding emoji row.</li>
+                <li>The commit message will be formatted automatically.</li>
+                <li>The result will be copied to your clipboard.</li>
+              </ol>
 
-            <ol>
-              <li>Enter the commit description in the field above.</li>
-              <li>Select the desired change type from the table.</li>
-              <li>Click on the corresponding emoji row.</li>
-              <li>The commit message will be formatted automatically.</li>
-              <li>The result will be copied to your clipboard.</li>
-            </ol>
+              <div class="example">
+                  <strong>Exemplo:</strong><br>
+                  Mensagem: <code>Corrige erro no login.</code><br>
+                  Tipo: <code>:bug:</code><br><br>
 
-            <div class="example">
-                <strong>Exemplo:</strong><br>
-                Mensagem: <code>Corrige erro no login.</code><br>
-                Tipo: <code>:bug:</code><br><br>
-
-                Resultado:
-                <code>:bug: Corrige erro no login.</code>
-            </div>
+                  Resultado:
+                  <code>:bug: Corrige erro no login.</code>
+              </div>
+          </div>
         </div>
+
+        <!-- GitHub Button -->
+        <a
+          href="https://github.com/RuanMiniguite/Commit_Craft"
+          target="_blank"
+          class="github-icon">
+
+          <i class="fa-brands fa-github"></i>
+        </a>
       </div>
+      
 
       <!-- Caixa de entrada para a mensagem do commit -->
       <div class="commit-box">

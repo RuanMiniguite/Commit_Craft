@@ -1,3 +1,10 @@
+.buttons-container{
+  display:flex;
+  flex-direction:row;
+  gap:15px;
+  margin-top:20px;
+}
+
 .help-container{
     position:fixed;
     top:20px;
@@ -68,6 +75,28 @@
 }
 
 .example code{
-    color:#50fa7b;
-    font-family:Consolas, monospace;
+  color:#50fa7b;
+  font-family:Consolas, monospace;
+}
+
+.github-icon{
+  position:fixed;
+  top:20px;
+  right:80px;
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#44475a;
+  color:#f8f8f2;
+  font-size:22px;
+  transition:.3s;
+}
+
+.github-icon:hover{
+  background:#bd93f9;
+  color:#282a36;
+  transform:scale(1.1);
 }
