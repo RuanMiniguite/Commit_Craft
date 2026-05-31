@@ -1,22 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-  
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Mensagem de Commit</title>
   </head>
   <body>
-    
+    <div class="container">
+      <h1>Mensagem de Commit</h1>
+      <table>
+        <!-- Cabeçalho -->
+        <thead>
+          <tr>
+            <th>Commit type</th>
+            <th>Icons</th>
+            <th>Commit message</th>
+          </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody>
+          <tr class="copy-row">
+            <td>Initial commit</td>
+            <td>🎉</td>
+            <td><span class="tag">:tada: first commit</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>New functionality</td>
+            <td>📦</td>
+            <td><span class="tag">:package:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Bug</td>
+            <td>🐛</td>
+            <td><span class="tag">:bug:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Refactor code</td>
+            <td>🔨</td>
+            <td><span class="tag">:hammer:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Removing code/files</td>
+            <td>🔥</td>
+            <td><span class="tag">:fire:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Configuration files</td>
+            <td>🔧</td>
+            <td><span class="tag">:wrench:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Documentation</td>
+            <td>📚</td>
+            <td><span class="tag">:books:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Performance</td>
+            <td>⚡</td>
+            <td><span class="tag">:zap:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Style</td>
+            <td>🎨</td>
+            <td><span class="tag">:art:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Responsive design</td>
+            <td>📱</td>
+            <td><span class="tag">:iphone:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Tests</td>
+            <td>🚨</td>
+            <td><span class="tag">:rotating_light:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Comments in source code</td>
+            <td>💡</td>
+            <td><span class="tag">:bulb:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>License</td>
+            <td>📜</td>
+            <td><span class="tag">:pencil:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Security</td>
+            <td>🔒</td>
+            <td><span class="tag">:lock:</span></td>
+          </tr>
+          <tr class="copy-row">
+            <td>Release</td>
+            <td>🚀</td>
+            <td><span class="tag">:rocket:</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="toast">Copiado para a área de transferência!</div>
+    </div>
   </body>
   <script src="js/main.js"></script>
 </html>
