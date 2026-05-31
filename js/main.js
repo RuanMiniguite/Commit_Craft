@@ -3,36 +3,30 @@ const toast = document.getElementById("toast");
 const resultTag1 = document.getElementById("resultTag1");
 const resultTag2 = document.getElementById("resultTag2");
 
-document.querySelectorAll("tbody tr").forEach(row => {
+document.querySelectorAll("tbody tr").forEach((row) => {
+  row.addEventListener("click", async () => {
+    const message = input.value.trim();
 
-    row.addEventListener("click", async () => {
+    const Icons = row.dataset.icons;
+    const imgIcons = row.querySelector("td:nth-child(2)").textContent.trim();
 
-        const message = input.value.trim();
+    const finalCommit = `"${Icons} ${message}"`;
+    const finalCommitWithIcons = `${imgIcons} ${message}`;
 
-        const Icons = row.dataset.icons;
-        const imgIcons = row.querySelector("td:nth-child(2)").textContent.trim();
+    try {
+      await navigator.clipboard.writeText(finalCommit);
 
-        const finalCommit = `"${Icons} ${message}"`;
-        const finalCommitWithIcons = `${imgIcons} ${message}`;
+      toast.textContent = `Copiado: ${finalCommit}`;
+      toast.classList.add("show");
 
-        try{
+      resultTag1.textContent = finalCommit;
+      resultTag2.textContent = finalCommitWithIcons;
 
-            await navigator.clipboard.writeText(finalCommit);
-
-            toast.textContent = `Copiado: ${finalCommit}`;
-            toast.classList.add("show");
-
-            resultTag1.textContent = finalCommit;
-            resultTag2.textContent = finalCommitWithIcons;
-
-            setTimeout(() => {
-                toast.classList.remove("show");
-            }, 2500);
-
-        }catch(err){
-            console.error(err);
-        }
-
-    });
-
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2500);
+    } catch (err) {
+      console.error(err);
+    }
+  });
 });

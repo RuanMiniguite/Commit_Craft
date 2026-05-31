@@ -43,27 +43,26 @@ body{
 
 /* Caixa de entrada para a mensagem do commit */
 .commit-box{
-    margin-bottom:25px;
-    font-family:Consolas, monospace;
+  margin-bottom:25px;
+  font-family:Consolas, monospace;
 }
 
 .commit-box input{
-    width:100%;
-    padding:16px;
-    border:none;
-    outline:none;
-    border-radius: 5px;
-    background:#44475a;
-    color:#f8f8f2;
-    font-size:1rem;
-    font-family:Consolas, monospace;
-    font-weight:700;
+  width:100%;
+  padding:16px;
+  border:none;
+  outline:none;
+  border-radius: 5px;
+  background:#44475a;
+  color:#f8f8f2;
+  font-size:1rem;
+  font-family:Consolas, monospace;
+  font-weight:700;
 }
 
 .commit-box input::placeholder{
     color:#6272a4;
 }
-
 
 /* Exemplo de mensagem de commit */
 .result{
