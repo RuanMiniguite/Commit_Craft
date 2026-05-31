@@ -52,15 +52,29 @@ td:nth-child(2){
 /* Linha de cópia */
 .copy-row{
   cursor:pointer;
+
+}
+
+/* mudar a cor das linhas ao clicar para verde*/
+.copy-row:active{
+  background:var(--green);
+  animation:copyAnimation 1s;
+}
+
+@keyframes copyAnimation{
+  0%{
+    background:var(--green);
+  }
+  100%{
+    background:transparent;
+  }
+  
 }
 
 .copy-row:hover{
   background:var(--purple);
 }
 
-.copy-row.copied{
-  background:#50fa7b;
-}
 
 #toast{
   position:fixed;

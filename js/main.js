@@ -21,7 +21,10 @@ document.querySelectorAll("tbody tr").forEach((row) => {
 
       resultTag1.textContent = finalCommit;
       resultTag2.textContent = finalCommitWithIcons;
-
+      
+      //mudar a cor d alinha quando selecioando
+      row.classList.add("copy-row:active");
+      
       setTimeout(() => {
         toast.classList.remove("show");
       }, 2500);
