@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) 
+{
+  .container{
+    max-width:90vw;
+  }
+
+  .title h1{
+    font-size:2.5rem;
+  }
+
+  .rocket{
+    width:50px;
+    height:50px;
+  }
+
+  .commit-box input{
+    font-size:1rem;
+  }
+
+  table{
+    font-size:0.7rem;
+  }
+
+  th{
+    font-size:1.5rem;
+  }
+
+  .help-tooltip{
+    width:90vw;
+    left:50%;
+    transform:translateX(-50%) translateY(-10px);
+  }
+  
+  /* Tooltip aparcer no centro da tela */
+  .help-container:hover .help-tooltip{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+
+}
