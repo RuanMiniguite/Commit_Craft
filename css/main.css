@@ -42,12 +42,25 @@ body{
 }
 
 /* Estilos para o cabeçalho */
-.hero{
+.cabecalho{
     text-align:center;
     margin-bottom:30px;
 }
 
-.hero h1{
+.title{
+    display:inline-flex;
+    align-items:center;
+    gap:15px;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+.rocket{
+    width:80px;
+    height:80px;
+}
+
+.title h1{
     font-size:3.5rem;
     font-weight:700;
     color:#bd93f9;
@@ -57,7 +70,7 @@ body{
     text-shadow:0 0 20px rgba(189,147,249,.4);
 }
 
-.hero p{
+.cabecalho p{
     color:#8be9fd;
     font-size:1rem;
     letter-spacing:.5px;
