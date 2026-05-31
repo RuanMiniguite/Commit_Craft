@@ -90,8 +90,8 @@ This project is [MIT][GitHub License-link] licensed.
 
 <!-- ============== LINKs ============== -->
 <!-- Alterar link -->
-[Site-link]: https://github.com/RuanMiniguite/Commit_Craft
-[GitHub License-link]: https://github.com/RuanMiniguite/Commit_Craft/blob/fe381e528da59c829814c405ef7287b10a1a15ab/LICENSE
+[Site-link]: https://ruanminiguite.github.io/Commit_Craft/
+[GitHub License-link]: https://github.com/RuanMiniguite/Commit_Craft/blob/d764e210bb2fa7d866127f7f96eeb17f6f014bb7/LICENSE
 
 [GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/Commit_Craft?style=for-the-badge&color=ff79c6
 [GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/Commit_Craft?style=for-the-badge&color=ff79c6
@@ -101,5 +101,5 @@ This project is [MIT][GitHub License-link] licensed.
 <!-- Permalink Shields-->
 [GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&color=ff79c6&style=for-the-badge
 [Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
-[Website-link]: https://github.com/RuanMiniguite/Commit-Message
+[Website-link]: https://ruanminiguite.github.io/Commit_Craft/
 [Website-shields]: https://img.shields.io/website?down_color=ff79c6&down_message=404&style=for-the-badge&logo=github&up_color=ff79c6&up_message=Commit&url=https%3A%2F%2Fgithub.com%2FRuanMiniguite%2FCommit-Message
