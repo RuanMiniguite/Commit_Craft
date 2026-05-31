@@ -1,0 +1,86 @@
+.container{
+  width:100%;
+  max-width:60vw;
+}
+
+table{
+  width:100%;
+  border-collapse: collapse;
+  background:rgba(40,42,54,.9);
+  backdrop-filter:blur(100px);
+  border-radius:5px;
+  overflow:hidden;
+  box-shadow:
+      0 0 5px rgba(189,147,249,.50),
+      0 0 1000px rgba(255,121,198,.6);
+}
+
+/* Cabeçalho da tabela */
+th{
+  padding:7px 10px;
+  color:var(--purple);
+  font-weight:700;
+  font-size:2rem;
+  border-bottom:1px solid var(--purple);
+}
+
+/* Corpo da tabela */
+td{
+  padding:7px 10px;
+  text-align:center;
+  font-size:1.25rem;
+}
+/* Estilo para a primeira coluna */
+td:nth-child(1){
+  font-size:1.3em;
+}
+/* Estilo para a segunda coluna */
+td:nth-child(2){
+  font-size:1.6rem;
+}
+
+.tag{
+    display:inline-flex;
+    align-items:center;
+    padding:6px 12px;
+    border-radius:5px;
+    background:#1f2230;
+    border:1px solid rgba(139,233,253,.2);
+    color:var(--pink);
+    font-family:Consolas, monospace;
+    font-size:1rem;
+    transition:.3s;
+}
+
+/* Linha de cópia */
+.copy-row{
+    cursor:pointer;
+}
+
+.copy-row:hover{
+    background:var(--purple);
+}
+
+.copy-row.copied{
+    background:#50fa7b;
+}
+
+#toast{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#50fa7b;
+    color:#282a36;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:600;
+    opacity:0;
+    transform:translateY(20px);
+    transition:.3s;
+    z-index:1000;
+}
+
+#toast.show{
+    opacity:1;
+    transform:translateY(0);
+}
