@@ -43,6 +43,7 @@ body h1{
 }
 
 body h1 .console{
+  font-size: 1.7rem;
   animation:blink 1.3s step-start infinite;
 }
 
@@ -54,3 +55,26 @@ body h1 .console{
     opacity:0;
   }
 }
+
+.example{
+  margin-top:20px;
+}
+
+.example h2{
+  font-size:1.2rem;
+  margin-bottom:10px;
+  color:var(--foreground);
+}
+
+.example p span.tag{
+  font-size:1rem;
+  margin-bottom:10px;
+}
+
+.example p span.tag{
+  display:inline-block;
+  width:300px;
+  text-align:justify;
+
+}
+
