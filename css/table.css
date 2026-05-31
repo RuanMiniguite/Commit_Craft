@@ -8,6 +8,7 @@ table{
   box-shadow:
     0 0 1px rgba(189,147,249,.50),
     0 0 1000px rgba(255,121,198,.6);
+    z-index: 5000;
 }
 
 /* Cabeçalho da tabela */
@@ -52,13 +53,15 @@ td:nth-child(2){
 /* Linha de cópia */
 .copy-row{
   cursor:pointer;
-
 }
 
-/* mudar a cor das linhas ao clicar para verde*/
+.copy-row:hover{
+  background:var(--purple);
+}
+
 .copy-row:active{
   background:var(--green);
-  animation:copyAnimation 1s;
+  animation:copyAnimation 2s;
 }
 
 @keyframes copyAnimation{
@@ -68,13 +71,7 @@ td:nth-child(2){
   100%{
     background:transparent;
   }
-  
 }
-
-.copy-row:hover{
-  background:var(--purple);
-}
-
 
 #toast{
   position:fixed;
