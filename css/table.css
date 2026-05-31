@@ -1,7 +1,4 @@
-.container{
-  width:100%;
-  max-width:60vw;
-}
+
 
 table{
   width:100%;
@@ -11,7 +8,7 @@ table{
   border-radius:5px;
   overflow:hidden;
   box-shadow:
-      0 0 5px rgba(189,147,249,.50),
+      0 0 1px rgba(189,147,249,.50),
       0 0 1000px rgba(255,121,198,.6);
 }
 
