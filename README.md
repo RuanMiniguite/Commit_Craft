@@ -98,6 +98,6 @@ This project is [MIT][GitHub License-link] licensed.
 
 <!-- Permalink Shields-->
 [GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&color=ff79c6&style=for-the-badge
-[Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
+[Site-shields]: https://img.shields.io/badge/Site-Live-ff79c6?style=for-the-badge&logo=web&logoColor=white
 [Website-link]: https://ruanminiguite.github.io/Commit_Craft/
 [Website-shields]: https://img.shields.io/website?down_color=ff79c6&down_message=404&style=for-the-badge&logo=github&up_color=ff79c6&up_message=Commit&url=https%3A%2F%2Fgithub.com%2FRuanMiniguite%2FCommit-Message
