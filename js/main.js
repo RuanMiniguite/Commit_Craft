@@ -10,8 +10,8 @@ document.querySelectorAll("tbody tr").forEach((row) => {
     const Icons = row.dataset.icons;
     const imgIcons = row.querySelector("td:nth-child(2)").textContent.trim();
 
-    const finalCommit = `"${Icons} ${message}"`;
-    const finalCommitWithIcons = `${imgIcons} ${message}`;
+    const finalCommit = `git commit -m "${Icons} ${message}"`;
+    const finalCommitWithIcons = `git commit -m "${imgIcons} ${message}"`;
 
     try {
       await navigator.clipboard.writeText(finalCommit);
