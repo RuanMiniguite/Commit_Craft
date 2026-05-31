@@ -1,43 +1,38 @@
-document.querySelectorAll('.copy-row').forEach(row => {
+const input = document.getElementById("commitMessage");
+const toast = document.getElementById("toast");
+const resultTag1 = document.getElementById("resultTag1");
+const resultTag2 = document.getElementById("resultTag2");
 
-    row.addEventListener('click', async () => {
+document.querySelectorAll("tbody tr").forEach(row => {
 
-        const commitMessage = row
-            .querySelector('.tag')
-            .textContent
-            .trim();
+    row.addEventListener("click", async () => {
 
-        try {
-            await navigator.clipboard.writeText(commitMessage);
+        const message = input.value.trim();
 
-            const originalBg = row.style.background;
+        const Icons = row.dataset.icons;
+        const imgIcons = row.querySelector("td:nth-child(2)").textContent.trim();
 
-            row.style.background = 'rgba(80, 250, 123, .8)';
+        const finalCommit = `"${Icons} ${message}"`;
+        const finalCommitWithIcons = `${imgIcons} ${message}`;
+
+        try{
+
+            await navigator.clipboard.writeText(finalCommit);
+
+            toast.textContent = `Copiado: ${finalCommit}`;
+            toast.classList.add("show");
+
+            resultTag1.textContent = finalCommit;
+            resultTag2.textContent = finalCommitWithIcons;
 
             setTimeout(() => {
-                row.style.background = originalBg;
-            }, 600);
+                toast.classList.remove("show");
+            }, 2500);
 
-        } catch (err) {
-            console.error('Erro ao copiar:', err);
+        }catch(err){
+            console.error(err);
         }
+
     });
 
-});
-
-const toast = document.getElementById('toast');
-
-document.querySelectorAll('.copy-row').forEach(row => {
-    row.addEventListener('click', async () => {
-
-        const text = row.querySelector('.tag').textContent.trim();
-
-        await navigator.clipboard.writeText(text);
-
-        toast.classList.add('show');
-
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 2000);
-    });
 });

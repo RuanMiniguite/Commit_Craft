@@ -36,45 +36,55 @@ body{
   padding:40px 20px;
 }
 
-body h1{
-  font-size:2.2rem;
-  margin-bottom:10px;
-  color: #fff;
+.container{
+  width:100%;
+  max-width:60vw;
 }
 
-body h1 .console{
-  font-size: 1.7rem;
-  animation:blink 1.3s step-start infinite;
+/* Caixa de entrada para a mensagem do commit */
+.commit-box{
+    margin-bottom:25px;
+    font-family:Consolas, monospace;
 }
 
-@keyframes blink{
-  0%, 50%{
-    opacity:1;
-  }
-  50.01%, 100%{
-    opacity:0;
-  }
+.commit-box input{
+    width:100%;
+    padding:16px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    background:#44475a;
+    color:#f8f8f2;
+    font-size:1rem;
+    font-family:Consolas, monospace;
+    font-weight:700;
 }
 
-.example{
+.commit-box input::placeholder{
+    color:#6272a4;
+}
+
+
+/* Exemplo de mensagem de commit */
+.result{
   margin-top:20px;
 }
 
-.example h2{
-  font-size:1.2rem;
+.result h2{
+  font-size: 1.6rem;
   margin-bottom:10px;
   color:var(--foreground);
 }
 
-.example p span.tag{
-  font-size:1rem;
-  margin-bottom:10px;
+.result p{
+  margin-bottom:5px;
 }
 
-.example p span.tag{
-  display:inline-block;
-  width:300px;
+.result p span.tag{
   text-align:justify;
-
+  width: 100%;
+  font-size: 1.1rem;
+  margin-bottom:9px;
+  margin-top: 3px;
 }
 

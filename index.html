@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/table.css" />
 
-    <title>Mensagem de Commit</title>
+    <title>Mensagem Commit</title>
   </head>
   <body>
     <div class="container">
-      <h1>Mensagem Commit<span class="console">_</span></h1>
+
+      <!-- Caixa de entrada para a mensagem do commit -->
+      <div class="commit-box">
+        <input type="text" id="commitMessage" placeholder="Type a commit message..."/>
+      </div>
 
       <table>
         <!-- Cabeçalho -->
@@ -32,77 +36,77 @@
 
         <!-- Corpo da tabela -->
         <tbody>
-          <tr class="copy-row">
+          <tr data-icons=":tag:" class="copy-row">
             <td>Initial commit</td>
             <td>🎉</td>
-            <td><span class="tag">:tada: first commit</span></td>
+            <td><span class="tag">:tada:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":package:" class="copy-row">
             <td>New functionality</td>
             <td>📦</td>
             <td><span class="tag">:package:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":bug:" class="copy-row">
             <td>Bug</td>
             <td>🐛</td>
             <td><span class="tag">:bug:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":hammer:" class="copy-row">
             <td>Refactor code</td>
             <td>🔨</td>
             <td><span class="tag">:hammer:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":fire:" class="copy-row">
             <td>Removing code/files</td>
             <td>🔥</td>
             <td><span class="tag">:fire:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":wrench:" class="copy-row">
             <td>Configuration files</td>
             <td>🔧</td>
             <td><span class="tag">:wrench:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":books:" class="copy-row">
             <td>Documentation</td>
             <td>📚</td>
             <td><span class="tag">:books:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":zap:" class="copy-row">
             <td>Performance</td>
             <td>⚡</td>
             <td><span class="tag">:zap:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":art:" class="copy-row">
             <td>Style</td>
             <td>🎨</td>
             <td><span class="tag">:art:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":iphone:" class="copy-row">
             <td>Responsive design</td>
             <td>📱</td>
             <td><span class="tag">:iphone:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":rotating_light:" class="copy-row">
             <td>Tests</td>
             <td>🚨</td>
             <td><span class="tag">:rotating_light:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":bulb:" class="copy-row">
             <td>Comments in source code</td>
             <td>💡</td>
             <td><span class="tag">:bulb:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":pencil:" class="copy-row">
             <td>License</td>
             <td>📜</td>
             <td><span class="tag">:pencil:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":lock:" class="copy-row">
             <td>Security</td>
             <td>🔒</td>
             <td><span class="tag">:lock:</span></td>
           </tr>
-          <tr class="copy-row">
+          <tr data-icons=":rocket:" class="copy-row">
             <td>Release</td>
             <td>🚀</td>
             <td><span class="tag">:rocket:</span></td>
@@ -111,14 +115,12 @@
       </table>
       <div id="toast">Copiado para a área de transferência!</div>
       
-      <!-- Exemplo de commit message -->
-      <div class="example">
-        <h2>Exemplo de mensagem de commit:</h2>
-        <p>Entrar: <span class="tag">:package: add new feature</span></p>
-        <p>Sair: <span class="tag">📦 add new feature</span></p>
+      <div class="result">
+        <h2>Result</h2>
+        <p>Input: <span class="tag" id="resultTag1">_</span></p>
+        <p>Output: <span class="tag" id="resultTag2">_</span></p>
       </div>
 
-    
     </div>
   </body>
   <script src="js/main.js"></script>
