@@ -90,7 +90,7 @@ td:nth-child(2){
   font-weight:600;
   opacity:0;
   transform:translateY(20px);
-  transition:.3s;
+  transition:.5s;
   z-index:1000;
 }
 

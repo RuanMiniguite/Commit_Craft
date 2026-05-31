@@ -16,7 +16,7 @@ document.querySelectorAll("tbody tr").forEach((row) => {
     try {
       await navigator.clipboard.writeText(finalCommit);
 
-      toast.textContent = `Copiado: ${finalCommit}`;
+      toast.textContent = `Copied to clipboard: ${finalCommit}`;
       toast.classList.add("show");
 
       resultTag1.textContent = finalCommit;
