@@ -3,9 +3,11 @@ table{
   border-collapse: collapse;
   background:rgba(40,42,54,.9);
   backdrop-filter:blur(100px);
-  border-radius:5px;
+  border-radius:16px;
+  border:1px solid #44475a;
   overflow:hidden;
   box-shadow:
+    0 10px 30px rgba(0,0,0,.4),
     0 0 1px rgba(189,147,249,.50),
     0 0 1000px rgba(255,121,198,.6);
     z-index: 5000;
