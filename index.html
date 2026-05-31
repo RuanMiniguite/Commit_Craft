@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,17 +13,44 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/help.css" />
 
     <title>Mensagem Commit</title>
   </head>
   <body>
     <div class="container">
 
+      <div class="help-container">
+        <button class="help-btn">?</button>
+
+        <div class="help-tooltip">
+            <h3>Como usar?</h3>
+
+            <ol>
+              <li>Enter the commit description in the field above.</li>
+              <li>Select the desired change type from the table.</li>
+              <li>Click on the corresponding emoji row.</li>
+              <li>The commit message will be formatted automatically.</li>
+              <li>The result will be copied to your clipboard.</li>
+            </ol>
+
+            <div class="example">
+                <strong>Exemplo:</strong><br>
+                Mensagem: <code>Corrige erro no login.</code><br>
+                Tipo: <code>:bug:</code><br><br>
+
+                Resultado:
+                <code>:bug: Corrige erro no login.</code>
+            </div>
+        </div>
+      </div>
+
       <!-- Caixa de entrada para a mensagem do commit -->
       <div class="commit-box">
         <input type="text" id="commitMessage" placeholder="Type a commit message..."/>
       </div>
 
+      <!-- Tabela de opções -->
       <table>
         <!-- Cabeçalho -->
         <thead>
@@ -115,6 +142,7 @@
       </table>
       <div id="toast">Copiado para a área de transferência!</div>
       
+      <!-- Área de resultado -->
       <div class="result">
         <h2>Result</h2>
         <p>Input: <span class="tag" id="resultTag1">_</span></p>
